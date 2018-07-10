@@ -37,8 +37,8 @@ program main
     t1 = wallclock()
     
     ! Print timing information
-    print "(i5,1x,a,1x,f9.5,2x,a,f12.4)", m, " time =", t0 - t1, & 
-      " MFLOPS = ", 1.d-6 * 2.d0 * m * m * m / (t0 - t1)
+    print "(i5,1x,a,1x,f9.5,2x,a,f12.4)", m, " time =", t1 - t0, &
+      " MFLOPS = ", 1.d-6 * 2.d0 * m * m * m / (t1 - t0)
     
     ! Check the result
     do j = 1,m
