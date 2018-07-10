@@ -1,6 +1,6 @@
-# Example 2: Vector manipulation
+# Example 2: Vector Manipulation
 The following program completes some vector manipulation tasks with two basic routines:
-1. vector_add: subroutine to add a scalar value to an existing array
+1. vector_add: subroutine to add two vectors, `(A = A + B)` 
 2. dot: function to perform a dot product between two vectors, returning the result
 
 We will modify the code to do the same operations on the GPU. Key concepts from this example are:
