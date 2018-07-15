@@ -4,7 +4,7 @@ vectors_cpu: main.f90 vector_ops.f90 timer.o
 	pgf90 -Mpreprocess -O3 vector_ops.f90 main.f90 timer.o -o vectors_cpu
 
 vectors_gpu: main.f90 vector_ops.f90 timer.o
-	pgf90 -Mpreprocess -Mcuda -O3 vector_ops.f90 main.f90 timer.o -o vectors_gpu
+	pgf90 -Mpreprocess -Mcuda=cuda9.1,cc70 -O3 vector_ops.f90 main.f90 timer.o -o vectors_gpu
 
 timer.o: timer.c
 	gcc -c timer.c
